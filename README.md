@@ -1,7 +1,7 @@
 # FOBU-MC-Anticheat
 Fate Of Beyond Universe Minecraft Anticheat made for private servers for fun
 
-You can download an builded jar in release branch.
+You can download an builded jar in release tag.
 
 Don't forget to setup the config fobu_mc_anticheat or the anticheat won't work.
 

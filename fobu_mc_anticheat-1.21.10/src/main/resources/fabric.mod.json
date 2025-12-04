@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "fobu_mc_anticheat",
+	"version": "${version}",
+	"name": "FOBU_MC_AntiCheat",
+	"description": "Fate Of Beyond Universe Minecraft Anticheat",
+	"authors": [
+		"Failed_Killer (Alex F.)"
+	],
+	"contact": {
+		"homepage": "https://fate-of-beyond-universe.dev/minecraft/anticheat.html",
+		"sources": "https://github.com/FOBU-Alex/FOBU-MC-Anticheat/"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/fobu_mc_anticheat/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.example.FOBU_MC_AntiCheat"
+		],
+		"client": [
+			"com.example.FOBU_MC_AntiCheatClient"
+		]
+	},
+	"mixins": [
+		"fobu_mc_anticheat.mixins.json",
+		{
+			"config": "fobu_mc_anticheat.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.1",
+		"minecraft": "~1.21.10",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
